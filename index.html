@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Momentum</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #060B18;
+      color: #e8eaf0;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 48px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #FFDA00;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: rgba(255,255,255,0.45);
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.72);
+    }
+    ul {
+      margin: 12px 0 12px 20px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #FFDA00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .chip {
+      display: inline-block;
+      background: rgba(255,218,0,0.12);
+      color: #FFDA00;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin: 2px 2px 2px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      font-weight: 700;
+    }
+    td {
+      padding: 10px 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.72);
+      vertical-align: top;
+    }
+    tr:nth-child(odd) td { background: rgba(255,255,255,0.02); }
+    .updated {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">MOMENTUM</div>
+      <p>Fitness tracking for athletes and coaches</p>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+      Momentum ("we", "our", or "us") is a fitness tracking application that helps athletes log workouts,
+      track progress, and work with personal trainers. This Privacy Policy explains what information we
+      collect, how we use it, and your rights regarding your data.
+    </p>
+    <p style="margin-top:12px;">
+      By using Momentum you agree to the practices described in this policy. If you do not agree,
+      please do not use the app.
+    </p>
+
+    <h2>2. Data We Collect</h2>
+    <p>We collect only the data necessary to provide the app's functionality:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Data</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Account</strong></td>
+          <td>Email address, first name, last name, username</td>
+          <td>Account creation, authentication, and profile display</td>
+        </tr>
+        <tr>
+          <td><strong>Fitness data</strong></td>
+          <td>Workout sessions, exercise names, weights, reps, planned workouts</td>
+          <td>Core app functionality — logging and tracking your training</td>
+        </tr>
+        <tr>
+          <td><strong>Identifiers</strong></td>
+          <td>Internal user ID</td>
+          <td>Linking your data across devices and sessions</td>
+        </tr>
+        <tr>
+          <td><strong>Notifications</strong></td>
+          <td>Device push token (if you grant permission)</td>
+          <td>Sending optional workout reminders</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      We do <strong>not</strong> collect location data, contacts, photos, browsing history,
+      financial information, or any sensitive personal data.
+    </p>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To create and maintain your account</li>
+      <li>To store and display your workout history and progress statistics</li>
+      <li>To enable the trainer–client relationship feature (trainers can view their clients' workout data)</li>
+      <li>To send transactional emails such as email verification and password reset links</li>
+      <li>To send push notifications if you choose to enable them</li>
+    </ul>
+    <p style="margin-top:12px;">
+      We do <strong>not</strong> use your data for advertising, profiling, or sell it to any third party.
+    </p>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>
+      Your data is stored in a PostgreSQL database hosted on Google Cloud SQL (europe-west1 region).
+      The app backend runs on Google Cloud Run. All data is transmitted over HTTPS/TLS.
+      Passwords are hashed using Argon2id before storage and are never stored in plain text.
+      Access tokens have a short lifetime and refresh tokens are rotated on each use.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>We use the following third-party services to operate the app:</p>
+    <ul>
+      <li>
+        <strong>Google Cloud Platform</strong> — infrastructure hosting (Cloud Run, Cloud SQL, Secret Manager).
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">Google Cloud Privacy Notice →</a>
+      </li>
+      <li>
+        <strong>Resend</strong> — transactional email delivery (verification and password reset emails only).
+        <a href="https://resend.com/privacy" target="_blank" rel="noopener">Resend Privacy Policy →</a>
+      </li>
+    </ul>
+    <p style="margin-top:12px;">
+      No analytics SDKs, advertising networks, or other data-sharing third parties are used in this app.
+    </p>
+
+    <h2>6. Data Retention</h2>
+    <p>
+      Your data is retained for as long as your account is active. If you delete your account,
+      all personal data associated with your account — including your profile, workout history,
+      and authentication tokens — is permanently deleted from our systems.
+    </p>
+
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the data we hold about you</li>
+      <li><strong>Correct</strong> inaccurate data via the Profile screen in the app</li>
+      <li><strong>Delete</strong> your account and all associated data from the Profile screen</li>
+      <li><strong>Export</strong> your data — contact us and we will provide a copy</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      Momentum is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children. If you believe a child has provided us with personal
+      information, please contact us and we will delete it promptly.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. The "Last updated" date at the top
+      of this page will reflect any changes. Continued use of the app after an update constitutes
+      acceptance of the revised policy.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy or wish to exercise your data rights,
+      please contact us at:
+      <a href="mailto:privacy@pwfyn.com">privacy@pwfyn.com</a>
+    </p>
+  </div>
+</body>
+</html>
